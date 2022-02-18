@@ -18,7 +18,7 @@ export default function Home() {
     <Head>
       <title>venkrr</title>
     </Head>
-    <Box w="100%" px={["1rem"]} maxWidth="1440px">
+    <Box w="100%" maxWidth="1440px">
       <Header/>
       <Newsletter/>
       <AppFlex 

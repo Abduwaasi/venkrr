@@ -2,7 +2,7 @@ import {Box,Flex,Button,Text,Heading} from "@chakra-ui/react"
 import DescriptionWithBtn from "./descriptionWithBtn"
 
 const Payment = ()=>{
-    return <Flex justifyContent="space-around" alignItems="center" flexDirection={["column",,"row"]} py="3rem" bg="#fbfbfb">
+    return <Flex justifyContent="space-around" alignItems="center" flexDirection={["column",,"row"]} py="3rem" bg="#fbfbfb" px={["1rem","2rem","3rem","4rem"]}>
         <Box w={["100%",,"45%"]}>
             <DescriptionWithBtn
              heading="Cheap one time payment"

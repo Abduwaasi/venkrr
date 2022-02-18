@@ -6,9 +6,9 @@ import DescriptionWithBtn from "./descriptionWithBtn"
 const Newsletter = ()=>{
     return (
 
-        <Flex sx={styles.container} >
+        <Flex sx={styles.container}  px={["1rem","2rem","3rem","4rem"]} >
             <Box sx={styles.leftBox} w={["100%","100%","48%","40%"]} my="2rem">
-                <Heading as="h4" sx={styles.heading}>Newsletter</Heading>
+                <Heading as="h4" sx={styles.heading} textAlign="left">Newsletter</Heading>
                 <Flex w="100%" bg="#fbfbfb">
                  <Image src={person} alt="person"/>
                 <Box sx={styles.details}>

@@ -5,7 +5,7 @@ import phone from "../public/static/phone.png"
 const Header = ()=>{
 
     return(
-        <Box sx={styles.container}>
+        <Box sx={styles.container} px={["1rem","2rem","3rem","4rem"]}>
          <Description 
           heading="Convert existing & new Twitter fans into Leads & Paying Customers"
           subheading="Venkrr allows you to create Twitter Funnels in Minutes"

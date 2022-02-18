@@ -6,7 +6,7 @@ import two from "../public/static/2.png"
 import three from "../public/static/3.png"
 
 const  Account = ()=>{
-    return <Flex  flexDirection={["column","column","row"]} justifyContent="space-around" alignItems="center">
+    return <Flex  flexDirection={["column","column","row"]} justifyContent="space-around" alignItems="center" px={["1rem","2rem","3rem","4rem"]}>
         <Box w={["100%",,"45%"]}>
          <Flex sx={styles.numberFlex}>
              <Box w="4rem" h="4rem" mr="1rem">

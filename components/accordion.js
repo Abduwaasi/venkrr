@@ -5,7 +5,7 @@ import Description from "./description"
 import questions from "../utils/data"
 
 const Accordion = ()=>{
-    return <Box w="100%" maxW="800px" display="flex" flexDirection="column"justifyContent="center" alignItems="center" mx="auto">
+    return <Box w="100%" maxW="800px" display="flex" flexDirection="column"justifyContent="center" alignItems="center" mx="auto" px={["1rem","2rem","3rem","4rem"]} py="3rem">
        <Description 
        heading="Questions and Answers"
        subheading="Frequent questions asked about Venkrr"
@@ -13,7 +13,7 @@ const Accordion = ()=>{
        {questions.map((query)=>(
            <Question query={query} key={query.id}/>
        ))}
-       <Button w={["100%","100%","70%"]} background="#0275BB" borderRadius="8px" fontWeight="normal"fontSize={["10px","14px"]} lineHeight="16px" color="#fff" my="2rem" _hover={{background:"#0275bb"}}>Didn’t find the answer you are looking for? Check out more questions. </Button>
+       <Button w={["100%","100%","70%"]} background="#0275BB" borderRadius="8px" fontWeight="normal"fontSize={["10px","14px"]} lineHeight="16px" color="#fff" mt="2rem" _hover={{background:"#0275bb"}}>Didn’t find the answer you are looking for? Check out more questions. </Button>
     </Box>
 }
 
