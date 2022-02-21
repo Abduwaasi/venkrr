@@ -5,7 +5,7 @@ import Description from "./description"
 import questions from "../utils/data"
 
 const Accordion = ()=>{
-    return <Box w="100%" maxW="800px" display="flex" flexDirection="column"justifyContent="center" alignItems="center" mx="auto" px={["1rem","2rem","3rem","4rem"]} py="3rem">
+    return <Box w="100%" maxW="800px" display="flex" flexDirection="column"justifyContent="center" alignItems="center" mx="auto" px={["5px","2rem","3rem","4rem"]} py="3rem">
        <Description 
        heading="Questions and Answers"
        subheading="Frequent questions asked about Venkrr"

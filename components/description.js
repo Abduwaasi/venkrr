@@ -14,7 +14,7 @@ const styles = {
         justifyContent:"center"
     },
     heading:{
-        fontSize:["2.5rem",,"3.2rem",,"3.5rem",],
+        fontSize:["2rem","2.5rem","3.2rem",,"3.5rem",],
         fontWeight:"800",
         textAlign:"center",
         color: "#2E2E2E",
