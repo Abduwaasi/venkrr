@@ -2,8 +2,8 @@ import { Heading,Text,Box } from "@chakra-ui/react";
 
 const Description = ({heading, subheading})=>{
     return <Box sx={styles.descContainer}>
-        <Heading sx={styles.heading}>{heading}</Heading>
-        <Text sx={styles.subheading}>{subheading}</Text>
+        <Heading sx={styles.heading} lineHeight="77px">{heading}</Heading>
+        <Text sx={styles.subheading} lineHeight="28px">{subheading}</Text>
     </Box>
 }
 
@@ -14,13 +14,10 @@ const styles = {
         justifyContent:"center"
     },
     heading:{
-        fontSize:["1.5rem","2rem","2.5rem","3.2rem"],
+        fontSize:["2.5rem",,"3.2rem",,"3.5rem",],
         fontWeight:"800",
-        lineHeight:["2rem","2.5rem","3rem","3.5rem"],
         textAlign:"center",
         color: "#2E2E2E",
-        marginBottom:"1rem"
-      
     },
     subheading:{
 

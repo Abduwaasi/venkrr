@@ -6,8 +6,8 @@ import DescriptionWithBtn from "./descriptionWithBtn"
 const Newsletter = ()=>{
     return (
 
-        <Flex sx={styles.container}  px={["1rem","2rem","3rem","4rem"]} >
-            <Box sx={styles.leftBox} w={["100%","100%","48%","40%"]} my="2rem">
+        <Flex sx={styles.container}  px={["1rem","1.5rem","2.5rem","4rem","7rem"]} >
+            <Box sx={styles.leftBox} w={["100%","100%","48%"]} my="2rem">
                 <Heading as="h4" sx={styles.heading} textAlign="left">Newsletter</Heading>
                 <Flex w="100%" bg="#fbfbfb">
                  <Image src={person} alt="person"/>
@@ -20,7 +20,7 @@ const Newsletter = ()=>{
                 <Button w="100%" textAlign="center" color="#0275BB" borderTopRadius="0">Subscribe</Button>
             </Box>
         
-            <Box sx={styles.rightBox} w={["100%","100%","48%","45%"]}>
+            <Box sx={styles.rightBox} w={["100%","100%","45%"]}>
                <DescriptionWithBtn
                 heading="Use the Twitters new 
                 Revue Badge to the 

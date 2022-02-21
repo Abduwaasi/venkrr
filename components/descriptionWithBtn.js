@@ -3,7 +3,7 @@ import {AiOutlineArrowRight} from "react-icons/ai"
 
 const DescriptionWithBtn = ({heading, text, button})=>{
  return <Flex
-  sx={styles.container}>
+  sx={styles.container} pr={["auto",,,"2rem","7rem"]}>
      <Heading as="h2">{heading}</Heading>
      <Text sx={styles.text}>{text}</Text>
     { button && <Button sx={styles.button} rightIcon={<AiOutlineArrowRight/>}>{button}</Button>}
@@ -30,7 +30,9 @@ const styles = {
         fontSize:["0.9rem",,,"1rem"],
         lineHeight:"26px",
         color: "#0F2137",
-        mb:"1rem"
+        mb:"1rem",
+        pr:"5rem"
+
     
     },
     button:{
@@ -38,7 +40,7 @@ const styles = {
     py:"0.9rem",
     border: "1px solid #0F2137",
     borderRadius:"6px",
-    variant:"transparent"
+    bg:"#fff"
  }
 }
 

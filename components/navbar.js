@@ -22,10 +22,10 @@ const Navbar = () =>{
 }
 const styles = {
   nav:{
-    px:["1rem","2rem","3rem","4rem"],
+    px:["1rem","1.5rem","2.5rem","4rem","7rem"],
     backgroundColor:"#fff",
     boxShadow:" 0px 1px 0px #E5E9F2",
-    py:"1rem",
+    h:"72px",
     width:"100%",
     maxWidth:"1400px",
     mx:"auto",
@@ -35,7 +35,8 @@ const styles = {
   },
  login:{
   fontWeight:"500",
-  fontSize:["0.6rem","0.7rem","0.9rem"],
+  px: ["2","4","6","8","10","12"],
+  fontSize:["0.8rem",,"0.9rem","1rem"],
   lineHeight:"1.2rem",
   textAlign:"center",
   color:"#343d48",
@@ -48,7 +49,7 @@ const styles = {
   }
  },
  start:{
-  px: [1,2,3,4],
+  px: ["2","4","6","8","10","12"],
   background:" #0275BB",
   borderRadius: "6px",
   color: "#fff",

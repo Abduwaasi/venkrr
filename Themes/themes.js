@@ -1,4 +1,5 @@
-const theme = {
+import { extendTheme } from "@chakra-ui/react"
+const themes = {
     styles: {
       global: {
         
@@ -15,5 +16,7 @@ const theme = {
         },
       },
     },
+    breakpoints:["320px","375px","425px","768px","1024px","1440px"]
   }
+  const theme = extendTheme(themes)
   export default theme
