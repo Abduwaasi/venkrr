@@ -2,7 +2,7 @@ import { useState } from "react"
 import {Box,Flex,Text,Icon,Button, background} from "@chakra-ui/react"
 import {AiOutlineDown,AiOutlineUp} from "react-icons/ai"
 import Description from "./description"
-import questions from "../utils/data"
+import {questions} from "../utils/data"
 
 const Accordion = ()=>{
     return <Box w="100%" maxW="800px" display="flex" flexDirection="column"justifyContent="center" alignItems="center" mx="auto" px={["5px","2rem","3rem","4rem"]} py="3rem">

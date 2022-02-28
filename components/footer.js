@@ -4,7 +4,7 @@ import logo from "../public/static/whiteLogo.png"
 import {AiOutlineInstagram,AiOutlineTwitter,AiOutlineYoutube} from "react-icons/ai"
 
 const Footer = ()=>{
-    return <Box bg="#151926"  py="1rem" px={["1rem","2rem","3rem","4rem"]} mt="2rem"  color="#fff" >
+    return <Box bg="#151926"  py="1rem" px={["1rem","2rem","3rem","4rem"]}  color="#fff" width="100%" maxW="1440px" mx="auto">
         <Flex  flexDirection={["column", "column","row"]} alignItems="center" justify="space-between">
         <Box maxWidth="150px" order="1">
         <Image src={logo} alt="footer logo"/>
