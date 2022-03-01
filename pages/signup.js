@@ -13,6 +13,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useForm } from 'react-hook-form'
 import {MdEmail} from "react-icons/md"
+import {FaUserAlt} from "react-icons/fa"
 import {TiLockClosed} from "react-icons/ti"
 import logo from "../public/static/logo.png"
 import FormHeader from "../components/formHeader"
@@ -117,8 +118,9 @@ const Signup = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={[<MdEmail color='#0275bb' />]}
-                />
+                >
+               <FaUserAlt color='#0275bb' />
+               </InputLeftElement>
                 <Input
                 type="text"
                 id="fullName" 
@@ -138,8 +140,9 @@ const Signup = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={[<MdEmail color='#0275bb' />]}
-                />
+                  >
+                  <MdEmail color='#0275bb' />
+                  </InputLeftElement>
                 <Input
                 type="email"
                 id="email" 
@@ -159,8 +162,9 @@ const Signup = ()=>{
          <InputGroup>
           <InputLeftElement
              pointerEvents='none'
-             children={[<TiLockClosed color='#0275bb' />]}
-           />
+           >
+            <TiLockClosed color='#0275bb' />
+            </InputLeftElement>
          <Input
             type="password" 
             id="password"  
@@ -180,8 +184,9 @@ const Signup = ()=>{
          <InputGroup>
           <InputLeftElement
              pointerEvents='none'
-             children={[<TiLockClosed color='#0275bb' />]}
-           />
+           >
+           <TiLockClosed color='#0275bb' />
+           </InputLeftElement>
          <Input
             type="password" 
             id="confirmPassword"  

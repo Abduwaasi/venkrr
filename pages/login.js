@@ -117,8 +117,9 @@ const ForgotPassword = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={[<MdEmail color='#0275bb' />]}
-                />
+                  >
+                  <MdEmail color='#0275bb' />
+                  </InputLeftElement>
                 <Input
                 type="email"
                 id="email" 
@@ -137,9 +138,9 @@ const ForgotPassword = ()=>{
      <FormControl>
          <InputGroup>
           <InputLeftElement
-             pointerEvents='none'
-             children={[<TiLockClosed color='#0275bb' />]}
-           />
+             pointerEvents='none' >
+           <TiLockClosed color='#0275bb' />
+           </InputLeftElement>
          <Input 
             type="password"
             id="password"  
