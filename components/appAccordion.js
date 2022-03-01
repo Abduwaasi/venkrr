@@ -19,7 +19,7 @@ const AppAccordion = ({array})=>{
         
             <Flex sx={styles.itemWrapper}>
                  {array.map((item)=>(
-               <EachTerm id={item.id} {...item}/> 
+               <EachTerm key={item.id} {...item}/> 
                 ))}
             </Flex>
     )

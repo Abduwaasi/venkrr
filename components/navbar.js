@@ -12,10 +12,10 @@ const Navbar = () =>{
          </Box>
           <Spacer/>
           <ButtonGroup spacing={[1,2,3,4]}>
-            <Link href="/login">
+            <Link href="/login" passHref={true}>
             <Button sx={styles.login} >Login</Button>
             </Link>
-            <Link href="signup">
+            <Link href="signup" passHref={true}>
             <Button sx={styles.start}>Get started</Button>
             </Link>
           </ButtonGroup>

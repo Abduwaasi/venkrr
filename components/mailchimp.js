@@ -24,7 +24,7 @@ const Mailchimp = ()=>{
 
     }
     return <Flex sx={styles.container}>
-        <Image src={mailchimpLogo}/>
+        <Image src={mailchimpLogo} alt="mailchimp logo"/>
 
         <Icon as={AiOutlineCaretDown} color="#0F2137" width="1rem" height="1rem"/>
     </Flex>

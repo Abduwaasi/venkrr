@@ -117,7 +117,7 @@ const Signup = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={<MdEmail color='#0275bb' />}
+                  children={[<MdEmail color='#0275bb' />]}
                 />
                 <Input
                 type="text"
@@ -138,7 +138,7 @@ const Signup = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={<MdEmail color='#0275bb' />}
+                  children={[<MdEmail color='#0275bb' />]}
                 />
                 <Input
                 type="email"
@@ -159,7 +159,7 @@ const Signup = ()=>{
          <InputGroup>
           <InputLeftElement
              pointerEvents='none'
-             children={<TiLockClosed color='#0275bb' />}
+             children={[<TiLockClosed color='#0275bb' />]}
            />
          <Input
             type="password" 
@@ -180,7 +180,7 @@ const Signup = ()=>{
          <InputGroup>
           <InputLeftElement
              pointerEvents='none'
-             children={<TiLockClosed color='#0275bb' />}
+             children={[<TiLockClosed color='#0275bb' />]}
            />
          <Input
             type="password" 
@@ -201,7 +201,7 @@ const Signup = ()=>{
         </VStack>
     </form>
     </Box>
-     <Text sx={styles.bottomText}>Already have an account? <Link href="/login"><a style={{color:"#0275BB"}}>Log in</a></Link></Text>
+     <Text sx={styles.bottomText}>Already have an account? <Link href="/login" passHref={true}><a style={{color:"#0275BB"}}>Log in</a></Link></Text>
     </Box>
 }
 

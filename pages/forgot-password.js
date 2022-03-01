@@ -117,7 +117,7 @@ const Signup = ()=>{
                 <InputGroup>
                  <InputLeftElement
                   pointerEvents='none'
-                  children={<MdEmail color='#0275bb' />}
+                  children={[<MdEmail color='#0275bb' />]}
                 />
                 <Input
                 type="email"
