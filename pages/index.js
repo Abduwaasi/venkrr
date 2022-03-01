@@ -1,15 +1,19 @@
 import Head from 'next/head'
-import {Box} from "@chakra-ui/react"
-import Header from '../components/header'
-import Newsletter from "../components/newsletter"
-import Accordion from "../components/accordion"
+import {Box,Flex,Heading} from "@chakra-ui/react"
+import Link from "next/link"
+
 import rafiki from "../public/static/Tweetstorm-rafiki 1.png"
 import Logos from "../public/static/Logos.png"
 import cuate from "../public/static/cuate.png"
 import newsletter from "../public/static/newsletter.png"
+
+import Navbar from "../components/navbar"
+import Footer from "../components/footer"
 import AppFlex from '../components/appFlex'
 import Account from '../components/createAccount'
 import Payment from '../components/payment'
+import Header from '../components/header'
+import Accordion from "../components/accordion"
 
 
 
@@ -20,6 +24,22 @@ export default function Home() {
     <Head>
       <title>venkrr</title>
     </Head>
+    <Navbar/>
+    <Heading>Testing Links</Heading>
+    <Flex justify="space-between" wrap="wrap" width="100%" px="2rem">
+      <Link href="/login"><a>Login</a></Link>
+      <Link href="/forgot-password"><a>Forgot password</a></Link>
+      <Link href="/signup"><a>Sign up</a></Link>
+      <Link href="/pricing"><a>Pricing</a></Link>
+      <Link href="/privacy"><a>Privacy</a></Link>
+      <Link href="/terms"><a>Term</a></Link>
+      <Link href="/settings"><a>Settings</a></Link>
+      <Link href="/settings2"><a>Settings</a></Link>
+      <Link href="/dashboard"><a>Dashboard</a></Link>
+      <Link href="/dashboard1"><a>Dashboard1</a></Link>
+      <Link href="/profile"><a>Profile</a></Link>
+     
+    </Flex>
     <Box w="100%" maxWidth="1440px" >
       <Header/>
       <Box height={["auto",,,"550px"]} display="flex"  alignItems="center">
@@ -57,9 +77,9 @@ export default function Home() {
       text="Venkrr helps you grow your subscriber list. When somebody subscribes via your Twitter profile, they will automatically be added to your newsletter tool of choice! "
       />
        </Box>
-   
     <Accordion/>
     </Box>
+    <Footer/>
       
     </>
   )

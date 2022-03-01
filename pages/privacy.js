@@ -1,6 +1,8 @@
 import {Box} from "@chakra-ui/react"
 import AppAccordion from "../components/appAccordion"
 import MediumHeading from "../components/mediumHeading"
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
 import {privacy} from "../utils/data"
 
 const Privacy = ()=>{
@@ -20,12 +22,16 @@ const Privacy = ()=>{
             mb:"3rem"
         }
     }
-    return <Box sx={styles.container}>
-        <Box sx={styles.headingWrapper}>
-        <MediumHeading headingText="Privacy Policy"/>
+    return <>
+      <Navbar/>
+        <Box sx={styles.container}>
+            <Box sx={styles.headingWrapper}>
+            <MediumHeading headingText="Privacy Policy"/>
+            </Box>
+        <AppAccordion array={privacy}/>
         </Box>
-      <AppAccordion array={privacy}/>
-    </Box>
+        <Footer/>
+    </>
 }
 
 export default Privacy

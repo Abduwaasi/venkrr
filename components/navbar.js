@@ -1,6 +1,7 @@
 import {Flex,ButtonGroup,Spacer,Button,Box} from "@chakra-ui/react"
 import Image from "next/image"
 import logo from "../public/static/logo.png"
+import Link from "next/link"
 
 const Navbar = () =>{
     return (
@@ -11,8 +12,12 @@ const Navbar = () =>{
          </Box>
           <Spacer/>
           <ButtonGroup spacing={[1,2,3,4]}>
+            <Link href="/login">
             <Button sx={styles.login} >Login</Button>
+            </Link>
+            <Link href="signup">
             <Button sx={styles.start}>Get started</Button>
+            </Link>
           </ButtonGroup>
         </Flex>
      

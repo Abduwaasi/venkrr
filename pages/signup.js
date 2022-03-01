@@ -24,8 +24,9 @@ const Signup = ()=>{
             alignItems:"center",
             flexDirection:"column",
             width:"100%",
+            minHeight:"100vh",
+            py:"7rem",
             maxWidth:"1440px",
-            py:"19rem",
             px:["1rem","1.4rem","2rem","3rem","4rem","5rem"],
             mx:"auto",
             bg:"linear-gradient(220.57deg, #EDEFF2 23.06%, #E7FFD2 99.15%)"
@@ -123,7 +124,7 @@ const Signup = ()=>{
                 id="fullName" 
                 placeholder="Enter your full name"
                 sx={styles.input} 
-                {...register('email', {
+                {...register('fullName', {
                     required: 'This is required',
                     minLength: { value: 10, message: 'Minimum length should be 10' },
                   })}

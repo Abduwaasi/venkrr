@@ -1,6 +1,8 @@
 import {Box} from "@chakra-ui/react"
 import AppAccordion from "../components/appAccordion"
 import MediumHeading from "../components/mediumHeading"
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
 import {terms} from "../utils/data"
 
 const Terms = ()=>{
@@ -20,12 +22,16 @@ const Terms = ()=>{
             mb:"3rem"
         }
     }
-    return <Box sx={styles.container}>
-        <Box sx={styles.headingWrapper}>
-        <MediumHeading headingText="Terms and conditions"/>
+    return <>
+        <Navbar/>
+        <Box sx={styles.container}>
+            <Box sx={styles.headingWrapper}>
+            <MediumHeading headingText="Terms and conditions"/>
+            </Box>
+        <AppAccordion array={terms}/>
         </Box>
-      <AppAccordion array={terms}/>
-    </Box>
+        <Footer/>
+    </>
 }
 
 export default Terms

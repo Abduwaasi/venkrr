@@ -24,8 +24,9 @@ const ForgotPassword = ()=>{
             alignItems:"center",
             flexDirection:"column",
             width:"100%",
+            minHeight:"100vh",
             maxWidth:"1440px",
-            py:"19rem",
+            py:"7rem",
             px:["1rem","1.4rem","2rem","3rem","4rem","5rem"],
             mx:"auto",
             bg:"linear-gradient(220.57deg, #EDEFF2 23.06%, #E7FFD2 99.15%)"

@@ -1,4 +1,6 @@
-import {Box,Flex,Heading,Text} from "@chakra-ui/react"
+import {Box,Flex,Heading,Text,Switch} from "@chakra-ui/react"
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
 
 import PaymentCard from "../components/paymentCard"
 
@@ -13,7 +15,8 @@ const Pricing = ()=>{
             flexDirection:"column",
             // justifyContent:"center",
             alignItems:"center",
-            height:"700px"
+            height:"700px",
+            px:"1rem"
         },
         paymentCard:{
             maxWidth:"624px",
@@ -34,26 +37,41 @@ const Pricing = ()=>{
             textAlign:"center",
             color:"#000000"
         },
+        textPlan:{
+        fontWeight: "normal",
+        fontSize: "25px",
+        lineHeight: "25px",
+        textAlign: "center",
+        color: "#000000",
+        opacity: 0.3
+        }
 
        
     }
 
     return (
+    <>
+        <Navbar/>
         <Box sx={styles.container}>
             
-             <Box sx={styles.paymentCard}>
-              <Box textAlign="center">
-              <Heading as ="h2" sx={styles.pricingHeading}> Ready to get started with Venkrr? </Heading>
-              <Text as ="p" sx={styles.pricingSubheading}>Choose the package that suits you</Text>
-              <Flex my="2.5rem" justify="center" alignItems="center">
-                  <Text>Monthly</Text>
-                  <Text>Yearly</Text>
-              </Flex>
-              </Box>
-              <PaymentCard/>
-
+            <Box sx={styles.paymentCard}>
+             <Box textAlign="center">
+             <Heading as ="h2" sx={styles.pricingHeading}> Ready to get started with Venkrr? </Heading>
+             <Text as ="p" sx={styles.pricingSubheading}>Choose the package that suits you</Text>
+             <Flex my="2.5rem" justify="space-between" alignItems="center" w="250px" mx="auto">
+                 <Text sx={styles.textPlan}> Monthly</Text>
+                 <Switch color='#0275bb' size='lg' />
+                 <Text sx={styles.textPlan}>Yearly</Text>
+             </Flex>
              </Box>
-        </Box>
+             <PaymentCard/>
+
+            </Box>
+       </Box>
+      <Footer/>
+    </>
+
+        
     )
 }
 

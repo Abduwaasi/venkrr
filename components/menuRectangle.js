@@ -1,15 +1,16 @@
 import {Box,Flex,Icon,Text,Spacer} from "@chakra-ui/react"
 
+
 import Image from "next/image"
 
-const MenuRectangle = ({logo,homeIcon,home,settingIcon,setting,profileIcon,profile,logout,logoutIcon})=>{
+const MenuRectangle = ({homeIcon,home,settingIcon,setting,profileIcon,profile,logout,logoutIcon,w,h,logo})=>{
 
     const styles = {
         container:{
             flexDir:"column",
-            justifyContent:"center",
-            alignItem:"center",
-            // pl:"35px",
+            // justifyContent:"center",
+            // alignItem:"center",
+            px:"35px",
             bg: "#0275BB",
             borderRadius: "0px",
             boxSizing:"border-box",
@@ -53,7 +54,8 @@ const MenuRectangle = ({logo,homeIcon,home,settingIcon,setting,profileIcon,profi
         }
     }
     return <Flex sx={styles.container}>
-        <Image src={logo} alt='Venkrr Logo'/>
+  
+        {logo && <Image src={logo} alt='Venkrr Logo' width={w} height={h}/>}
         <Spacer/>
         <Flex sx={styles.iconWrapper}>
          <Flex sx={styles.textWrapper}>

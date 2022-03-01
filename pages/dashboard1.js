@@ -7,7 +7,7 @@ import NewSubscriber from "../components/newSubscriber"
 import DashboardRectangle from "../components/dashboardRectangle";
 import Mailchimp from "../components/mailchimp";
 
-import venkrrLogo from "../public/static/fullLogo.png"
+import fullLogo from "../public/static/fullLogo.png"
 import { AiFillHome, AiFillSetting } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
@@ -16,7 +16,7 @@ export const Dashboard1 = ()=>{
     return <Flex w="100vw">
         <Box w="21vw" h="1096px">
          <MenuRectangle 
-         logo={venkrrLogo}
+         logo={fullLogo}
          homeIcon={AiFillHome}
          home="Home"
          settingIcon={AiFillSetting}

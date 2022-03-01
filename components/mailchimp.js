@@ -20,38 +20,12 @@ const Mailchimp = ()=>{
         pl:"24px",
         pr:"20px",
         gap:"20px"
-        },
-        mailchimp:{
-            fontStyle: "normal",
-            fontWeight: "500",
-            fontSize: "20px",
-            lineHeight: "24px",
-            color: "#151926",
-        },
-        ellipse:{
-            width:"14px",
-            height:"14px",
-            background: "#6EDF6C",
-            borderRadius:"full",
-            display:"flex",
-            justifyContent:"center",
-            alignItems:"center",
-            color:"#fff",
-            ml:"0.8rem"
-        },
-        ellipseFlex:{
-            alignItems:"center",
         }
 
     }
     return <Flex sx={styles.container}>
         <Image src={mailchimpLogo}/>
-        {/* <Flex sx={styles.ellipseFlex}>
-            <Text sx={styles.mailchimp}>Mailchimp</Text>
-            <Box sx={styles.ellipse}>
-             <Icon as={GrFormCheckmark} color="#ffffff" w="7px" h="5px"/>
-            </Box>
-        </Flex> */}
+
         <Icon as={AiOutlineCaretDown} color="#0F2137" width="1rem" height="1rem"/>
     </Flex>
 }
